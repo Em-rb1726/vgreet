@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    padding-top: 20px; 
+}
+header img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(246, 170, 181);
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.content-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 2em;
+    color: rgb(255, 0, 187);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+#yes {
+    background-color: rgb(195, 247, 195);
+}
+#yes:hover {
+    background-color: rgb(231, 85, 145);
+    color: white;
+    transform: scale(1.05);
+}
+
+#no {
+    background-color: lightcoral;
+    color: white;
+    transition: transform 0.25s ease, left 0.4s ease, top 0.4s ease;
+}
+#no:hover {
+    background-color: rgb(189, 27, 62);
+}
+
+.pop-image {
+    width: 80px;          
+    height: auto;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+    z-index: 10;
+    animation: popIn 0.6s ease-out forwards;
+}
+ 
+@keyframes popIn {
+    0% { transform: scale(0.3) rotate(-15deg); opacity: 0; }
+    70% { transform: scale(1.15) rotate(10deg); opacity: 1; }
+    100% { transform: scale(1) rotate(0deg); }
+}
+footer {
+    display: flex;
+    background-color: rgb(179, 118, 127);
+    position: absolute;
+    padding: 0.3rem;
+    border-radius: 8px;
+    bottom: 10px;
+    justify-content: center;
+    font-size: 14px;
+}
