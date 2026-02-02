@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const noButton = document.getElementById('no');
     const yesButton = document.getElementById('yes');
-    const buttonContainer = document.querySelector('.button-container'); // ← add this
+    const buttonContainer = document.querySelector('.button-container'); 
 
     let isAbsolute = false;
 
@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
         isAbsolute = true;
     }
 
-    noButton.addEventListener('mouseover', function (e) {
-        makeAbsolute(); 
+    noButton.addEventListener('mousemove', function (e) {
+        makeAbsolute();
 
         const rect = noButton.getBoundingClientRect();
         const mouseX = e.clientX;
@@ -52,16 +52,15 @@ document.addEventListener("DOMContentLoaded", function () {
     "img/gugugaga.jpg",          
     "img/cry.jpg",
     "img/new.jpg",
-
-    ];
+];
     const yesPopImages = [
     "img/happy.jpg",       
     "img/japi.jpg",
     "img/hapi.jpg"
 ];
    function popUpImages(imageList) {
-    for (let i = 0; i < 4; i++) {  
-        if (imageList.length === 0) return;
+    for (let i = 1; i < 4; i++) {  
+        if (imageList.length === 2) return;
 
         const img = document.createElement('img');
         img.src = imageList[Math.floor(Math.random() * imageList.length)];
@@ -94,7 +93,7 @@ yesButton.addEventListener('mouseenter', () => {
 
 
     yesButton.addEventListener('click', function () {
-        alert('Yay!! well then, I shall libre u to Ondwings!! ❤️');
+        alert('syempre wala ka namang choice, i shall take u to ondwings, mwehehehe #syempre_sa_gusto_ko_ring_lugar_kita_ililibre #cravings');
         confetti();
         document.getElementById("background-music").play();
 
@@ -127,7 +126,7 @@ yesButton.addEventListener('mouseenter', () => {
             setTimeout(() => overlay.remove(), 1200);
         }, 20000);
 
-        // Click to close early
+        
         overlay.addEventListener('click', () => overlay.remove());
     }
 });
