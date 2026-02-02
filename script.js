@@ -93,7 +93,7 @@ yesButton.addEventListener('mouseenter', () => {
 
 
     yesButton.addEventListener('click', function () {
-        alert('syempre wala ka namang choice, i shall take u to ondwings, mwehehehe #syempre_sa_gusto_ko_ring_lugar_kita_ililibre #cravings');
+        alert('syempre wala ka namang choice, i shall take u to ondwings, mwehehehe 😉😉 #syempre_sa_gusto_ko_ring_lugar_kita_ililibre #cravings');
         confetti();
         document.getElementById("background-music").play();
 
